@@ -40,7 +40,10 @@ export default function Search({
                 id={`skill-${index}`}
                 name={`skill-${index}`}
                 value={skill}
-                onChange={(e) => handleSkillChange(index, e.target.value)}
+                onChange={(e) => {
+                  e.preventDefault()
+                  handleSkillChange(index, e.target.value);
+                }}
                 placeholder="Enter candidate skill"
                 className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
               />
