@@ -35,17 +35,10 @@ export function useCreateCandidate() {
       return response.data;
     },
     onSuccess: () => {
-      //   enqueueSnackbar("Dados salvos com sucesso!", {
-      //     variant: "success",
-      //     preventDuplicate: false
-      //   })
-      //   navigate('/supplier-list', {replace: true})
+      console.log("Dados salvos com sucesso!");
     },
     onError: () => {
-      //   enqueueSnackbar(`Ocorreu um erro.`, {
-      //     variant: "error",
-      //     preventDuplicate: false
-      //   })
+      console.log("Ocorreu um erro.");
     },
   });
 }
